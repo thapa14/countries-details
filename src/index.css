@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-Nunito: "Nunito Sans";
+
+    --breakpoint-xs: 30rem;
+
+    /*bg color*/
+    --color-bg-light: hsl(0, 0%, 98%);
+    --color-bg-dark: hsl(207, 26%, 17%);
+
+    /*elements color*/
+    --color-surface-light: hsl(0, 0%, 100%);
+    --color-surface-dark: hsl(209, 23%, 22%);
+
+    /*text color*/
+    --color-text-light: hsl(200, 15%, 8%);
+    --color-text-dark: hsl(0, 0%, 100%);
+    --color-input-light: hsl(0, 0%, 52%);
+}
+
+body{
+    min-height: 100vh;
+    @apply bg-bg-light text-text-light dark:bg-bg-dark dark:text-text-dark;
+}

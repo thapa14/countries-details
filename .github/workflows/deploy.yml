@@ -25,4 +25,25 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
 
-      - na
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact (from dist/)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'  # 👈 IMPORTANT
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

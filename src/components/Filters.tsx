@@ -31,6 +31,7 @@ export default function Filters() {
                         value={region}
                         onChange={onRegionChange}
                 >
+                    <option value="">Select a region</option>
                     {regionList.map((regionVal, index) => (
                             <option key={index}>{regionVal}</option>
                     ))}

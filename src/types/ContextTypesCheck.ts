@@ -6,7 +6,7 @@ interface CountryBaseType {
     selectedCountry: Country | null;
     searchValue?: string;
     region?: string;
-    regionList : string[]
+    regionList: string[]
 }
 
 export type CountryDataType = CountryBaseType

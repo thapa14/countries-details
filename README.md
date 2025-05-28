@@ -15,6 +15,7 @@ between light and dark themes.
     - [Built With](#built-with)
     - [What I Learned](#what-i-learned)
     - [Continued Development](#continued-development)
+      
 - [Author](#author)
 
 ## Overview
@@ -31,8 +32,9 @@ Users should be able to:
 - Toggle the color scheme between light and dark mode
 
 ### Screenshot
-
-<!-- Replace with your screenshot -->
+![home-dark](https://github.com/user-attachments/assets/a12e1abf-39a3-4798-a42f-3d49398f23e6)
+![mobile-home-dark](https://github.com/user-attachments/assets/51a9c87e-9550-4111-ab7a-2a45ddd40cf0)
+![mobile-details-dark](https://github.com/user-attachments/assets/f71e194a-6a43-406e-9770-a726783de73c)
 
 ### Links
 
